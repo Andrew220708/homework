@@ -1,4 +1,4 @@
-//
+// #region
 //
 //
 //
@@ -183,3 +183,43 @@
 // x >= 10; // x < 10 => true; | x < 10 => false
 
 // null >= 0; // null < 0 => false; true
+
+// #endregion
+
+// LOOPS
+
+// const string = 'abcdefghijklnmopqrstuvwxyz';
+// const aplhabetArray = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i'];
+// console.log(string.length, 'string length');
+
+// const vowels = 'aeiouy';
+// let consonants = '';
+// let consonantsArray = [];
+
+// for (const letter of string) {
+//     if (!vowels.includes(letter)) {
+//         consonants += letter;
+//     }
+// }
+
+// console.log(consonants);
+
+// for (const letter of aplhabetArray) {
+//     console.log(letter);
+//     if (!vowels.includes(letter)) {
+//         consonantsArray.push(letter);
+//     }
+// }
+
+// console.log(consonantsArray);
+
+function getEvenNumbers(start, end) {
+    console.log(start, end);
+  const array = [];
+  for (let number = start; number < end; number += 1) {
+    if (number % 2 === 0) {
+      array.push(number);
+    }
+  }
+  console.log(array);
+}
