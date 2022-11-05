@@ -213,13 +213,80 @@
 
 // console.log(consonantsArray);
 
-function getEvenNumbers(start, end) {
-    console.log(start, end);
-  const array = [];
-  for (let number = start; number < end; number += 1) {
-    if (number % 2 === 0) {
-      array.push(number);
+// function getEvenNumbers(start, end) {
+//     console.log(start, end);
+//   const array = [];
+//   for (let number = start; number < end; number += 1) {
+//     if (number % 2 === 0) {
+//       array.push(number);
+//     }
+//   }
+//   console.log(array);
+// }
+const products = [
+  { name: 'Radar', price: 1300, quantity: 4 },
+  { name: 'Scanner', price: 2700, quantity: 3 },
+  { name: 'Droid', price: 400, quantity: 7 },
+  { name: 'Grip', price: 1200, quantity: 9 },
+];
+
+function calculateTotalPrice(productName) {
+  let totalPrice = 0;
+  for (const product of products) {
+    console.log(productName in product);
+    if (productName in product) {
+      totalPrice = product.price * product.quantity;
     }
   }
-  console.log(array);
+
+  return totalPrice;
 }
+
+console.log(calculateTotalPrice('Radar'));
+
+const object = {
+  name: 'Radar',
+  price: 1300,
+  quantity: 4,
+  type: "module",
+  madeIn: "Japan",
+
+};
+
+for (const { name, price } of products) {
+  console.log(name, price);
+}
+
+const forecast = {
+  today: {
+    low: 28,
+    high: 32,
+    icon: 'https://www.flaticon.com/svg/static/icons/svg/861/861059.svg',
+  },
+  tomorrow: {
+    low: 27,
+    high: 31,
+  },
+};
+
+const {
+  today: {low: lowToday, high: highToday, icon: iconToday},
+  tomorrow: {low: lowTomorrow, high: highTomorrow, icon: iconTomorrow = 'default'},
+} = forecast;
+console.log(lowToday, highToday, iconToday, lowTomorrow, highTomorrow, iconTomorrow);
+
+function testFunc({
+    today: {
+      low: lowToday,
+      high: highToday,
+    },
+    tomorrow: {
+      low: lowTomorrow,
+      high: highTomorrow,
+    },
+  }) {
+
+  console.log(lowToday, highToday, lowTomorrow, highTomorrow);
+}
+
+testFunc(forecast);
