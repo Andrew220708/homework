@@ -223,70 +223,152 @@
 //   }
 //   console.log(array);
 // }
-const products = [
-  { name: 'Radar', price: 1300, quantity: 4 },
-  { name: 'Scanner', price: 2700, quantity: 3 },
-  { name: 'Droid', price: 400, quantity: 7 },
-  { name: 'Grip', price: 1200, quantity: 9 },
-];
+// const products = [
+//   { name: 'Radar', price: 1300, quantity: 4 },
+//   { name: 'Scanner', price: 2700, quantity: 3 },
+//   { name: 'Droid', price: 400, quantity: 7 },
+//   { name: 'Grip', price: 1200, quantity: 9 },
+// ];
 
-function calculateTotalPrice(productName) {
-  let totalPrice = 0;
-  for (const product of products) {
-    console.log(productName in product);
-    if (productName in product) {
-      totalPrice = product.price * product.quantity;
-    }
-  }
+// function calculateTotalPrice(productName) {
+//   let totalPrice = 0;
+//   for (const product of products) {
+//     console.log(productName in product);
+//     if (productName in product) {
+//       totalPrice = product.price * product.quantity;
+//     }
+//   }
 
-  return totalPrice;
-}
+//   return totalPrice;
+// }
 
-console.log(calculateTotalPrice('Radar'));
+// console.log(calculateTotalPrice('Radar'));
 
-const object = {
-  name: 'Radar',
-  price: 1300,
-  quantity: 4,
-  type: "module",
-  madeIn: "Japan",
+// const object = {
+//   name: 'Radar',
+//   price: 1300,
+//   quantity: 4,
+//   type: "module",
+//   madeIn: "Japan",
 
-};
+// };
 
-for (const { name, price } of products) {
-  console.log(name, price);
-}
+// for (const { name, price } of products) {
+//   console.log(name, price);
+// }
 
-const forecast = {
-  today: {
-    low: 28,
-    high: 32,
-    icon: 'https://www.flaticon.com/svg/static/icons/svg/861/861059.svg',
-  },
-  tomorrow: {
-    low: 27,
-    high: 31,
-  },
-};
+// const forecast = {
+//   today: {
+//     low: 28,
+//     high: 32,
+//     icon: 'https://www.flaticon.com/svg/static/icons/svg/861/861059.svg',
+//   },
+//   tomorrow: {
+//     low: 27,
+//     high: 31,
+//   },
+// };
 
-const {
-  today: {low: lowToday, high: highToday, icon: iconToday},
-  tomorrow: {low: lowTomorrow, high: highTomorrow, icon: iconTomorrow = 'default'},
-} = forecast;
-console.log(lowToday, highToday, iconToday, lowTomorrow, highTomorrow, iconTomorrow);
+// const {
+//   today: {low: lowToday, high: highToday, icon: iconToday},
+//   tomorrow: {low: lowTomorrow, high: highTomorrow, icon: iconTomorrow = 'default'},
+// } = forecast;
+// console.log(lowToday, highToday, iconToday, lowTomorrow, highTomorrow, iconTomorrow);
 
-function testFunc({
-    today: {
-      low: lowToday,
-      high: highToday,
-    },
-    tomorrow: {
-      low: lowTomorrow,
-      high: highTomorrow,
-    },
-  }) {
+// function testFunc({
+//     today: {
+//       low: lowToday,
+//       high: highToday,
+//     },
+//     tomorrow: {
+//       low: lowTomorrow,
+//       high: highTomorrow,
+//     },
+//   }) {
 
-  console.log(lowToday, highToday, lowTomorrow, highTomorrow);
-}
+//   console.log(lowToday, highToday, lowTomorrow, highTomorrow);
+// }
 
-testFunc(forecast);
+// testFunc(forecast);
+// const temps = [14, -4, 25, 8, 11];
+// console.log(temps);
+
+// Это точная, но независимая копия массива temps
+// const copyOfTemps = [...temps];
+// console.log(copyOfTemps);
+
+// const bookShelf = {
+//   books: ['The last kingdom', 'Haze', 'The guardian of dreams'],
+//   updateBook(oldName, newName) {
+//     let index = this.books.indexOf(oldName);
+//     this.books.splice(index, 1, newName);
+//   },
+// };
+
+// bookShelf.updateBook('Haze', 'Dungeon chronicles');
+
+// console.log(
+//     bookShelf.books,
+// );
+
+// const string = 'Hello, world';
+
+
+// console.log(string.indexOf('world'));
+
+// const newPotion = { name: 'Speed potion', price: 460 };
+
+// const potions = [
+//     { name: 'Speed potion', price: 460 }, // 0
+//     { name: 'Dragon breath', price: 780 }, // 1
+//     { name: 'Stone skin', price: 520 }, // 2
+// ];
+
+// console.log(`${newPotion.name}`);
+
+// for (let i = 0; i < potions.length; i++) {
+//     if (potions[i].name === newPotion.name) {
+//         potions.splice(i, 1);
+//     }
+// }
+
+// function myFunc(f, ...args) {
+//     console.log('starting myFunc...');
+//     console.log(args);
+//     for (const arg of args) {
+//         f(arg)
+//     }
+// }
+
+// /*
+// function show(y) {
+//     console.log(y);
+// } */
+
+// myFunc((x) => { console.log(x) }, 1, 2, 3, 4, 5);
+
+// function myFunc1(z) {
+//     console.log(z);
+// }
+
+// myFunc1(function(x) {console.log(x)})
+// const doMath = function (a, b, callback) {
+//     const result = callback(a, b);
+
+//     console.log(result);
+// };
+
+
+// doMath(10500, 47, function (x, y) {
+//     return x * y;
+// });
+// doMath (9, 1, function (x, y) {
+//     return x + y;
+// });
+// doMath(1050, 2475, function (x, y) {
+//     return x - y;
+// });
+
+
+
+
