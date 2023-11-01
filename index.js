@@ -371,4 +371,335 @@
 
 
 
+// function changeEven(numbers, value) {
+//   // Change code below this line
+//   const result = [];
 
+//   numbers.forEach(number => {
+//     if (number % 2 === 0) {
+//       result.push(number + value);
+//       result.push(number);
+//     } else {
+        
+//       }
+
+//   });
+//   return result;
+// }
+
+
+// const numbers = [44, 13, 81, 92, 36, 54];
+
+// const newMap = numbers.map(element => {
+//     if (element % 2 === 0) {
+//         return 'even';
+//     } else {
+//         return 'odd';
+//     }
+// });
+
+// console.log(newMap);
+// console.log(numbers);
+
+
+// const students = [
+//   { name: "Mango", courses: ["mathematics", "physics"] },
+//   { name: "Poly", courses: ["science", "mathematics"] },
+//   { name: "Kiwi", courses: ["physics", "biology"] },
+// ];
+
+// console.log(
+//     students.map(student => student.courses),
+//     students.flatMap(student => student.courses),
+// );
+
+// const numbers1 = [17, 24, 82, 61, 36, 18, 47, 52, 73];
+
+// function callback(number) {
+//     return number > 25;
+// }
+
+// function filterNumbers(array, callback) {
+//     const result = [];
+//     for (const number of array) {
+//         if (callback(number)) {
+//             result.push(number);
+//         }
+//     }
+
+//     return result;
+// }
+
+// const newArray = filterNumbers(numbers1, callback);
+// const newArray1 = numbers1.filter(number => number > 25);
+// console.log(newArray);
+// console.log(newArray1);
+// console.log(Array.prototype.filter);
+
+// const object = {
+//     name: 'Alex',
+//     age: 31,
+//     filter: function () { }
+// }
+
+// const genres = ['adventure', 'history', 'fiction', 'mysticism', 'horror', 'mysticism', 'adventure'];
+
+// const uniqueGenres = genres.filter(genre => {
+//     console.log(genre);
+// })
+
+// const lettersArray = ['a', 'b', 'c'];
+// const numbersArray = [100, 200, 300, 400];
+
+// function createString(array) {
+//     let result = '';
+
+//     for (const letter of array) {
+//         result += letter;
+//     }
+
+//     return result;
+// }
+
+// console.log(
+//   createString(lettersArray), // ['a', 'b', 'c'] => abc
+// );
+
+// console.log(
+//     lettersArray.reduce((result, letter) => result + letter, 'The string is: '),
+//     numbersArray.reduce((sum, number) => sum + number, 0),
+// );
+// const books = [
+//   {
+//     title: 'The Last Kingdom',
+//     author: 'Bernard Cornwell',
+//     rating: 8.38,
+//   },
+//   {
+//     title: 'Beside Still Waters',
+//     author: 'Robert Sheckley',
+//     rating: 8.51,
+//   },
+//   {
+//     title: 'The Dream of a Ridiculous Man',
+//     author: 'Fyodor Dostoevsky',
+//     rating: 7.75,
+//   },
+//   { title: 'Redder Than Blood', author: 'Tanith Lee', rating: 7.94 },
+//   { title: 'Enemy of God', author: 'Bernard Cornwell', rating: 8.67 },
+// ];
+// Change code below this line
+
+// const sortedByAuthorName = [...books].sort(
+//   (firstBook, secondBook) => firstBook.author - secondBook.author,
+// );
+
+// const sortedByReversedAuthorName = [...books].sort(
+//   (firstBook, secondBook) => secondBook.author - firstBook.author,
+// );
+
+// const sortedByAscendingRating = [...books].sort(
+//   (firstBook, secondBook) => firstBook.author - secondBook.author,
+// );
+
+// const sortedByDescentingRating = [...books].sort(
+//   (firstBook, secondBook) => secondBook.author - firstBook.author,
+// );
+// console.log(sortedByDescentingRating);
+
+// let value;
+// console.log(value);
+// value = 20;
+// console.log(value);
+// // value = "Hello";
+// // console.log(value);
+// const str = `value - ${value -10}`;
+// console.log(str);
+// const num = 15;
+// const str = '15';
+// // console.log(typeof str);
+// console.log(typeof num === 'number');
+// alert('привіт вчи js')
+// console.log('привіт вчи js');
+// const message = prompt("Введіть ім'я")
+// console.log(message);
+// const result = confirm(`lerne englih`);
+// console.log(result);
+
+/****Основні оператори***** */
+
+// console.log(25 > Number(`21`));
+// console.log(25 < 27);
+//
+// const password = prompt('Enter your password');
+// console.log(password === '220708');
+// console.log(25 <= 25);
+// console.log('1'!== 1);
+ 
+/****Логічні оператори ****/
+
+// console.log(false || 1);
+// console.log(true && 4 && 'kiwi');
+// console.log(false ?? 4);
+// console.log(null ?? 72);
+
+/**** Методи**** */
+
+// const str = '25.7as32px';
+// // console.log(Number.parseFloat(str));
+// // console.log(Number.parseInt(str));
+
+// console.log(isNaN(str));
+// console.log(Number.isNaN(str));
+
+/**** Класс Math *****/
+
+// const value = 11.400
+// console.log(Math.floor(value));
+// console.log(Math.ceil(value));
+// console.log(Math.round(value));
+// console.log(Math.pow(5, 4));
+
+/****** Методи та властивості для роботи з рядками ****/
+
+// const str = "Hello world";
+// console.log(str.length);
+// console.log(str.toLowerCase());
+// console.log(str.toUpperCase());
+// console.log(str.indexOf('H'));
+// console.log(str.includes('Hello'));
+// console.log(str.includes(' '));
+// console.log(str.endsWith(' world'));
+// console.log(str.startsWith('Hello '));
+// console.log(str.replace('Hello', 'love'));
+// console.log(str.replaceAll('l','super'));
+// console.log(str.slice(str.indexOf('world'), str.length));
+// console.log(str.indexOf('world'));
+// console.log(str.slice(0, str.indexOf(' ')));
+// let value = 11;
+// if (value === 10) {
+//     console.log('condition true', ':)');
+// }
+
+/***** Інструкція if та її варіації *****/
+
+// let value = ;
+// if (value === 10) {
+//   console.log('condition true', ':)');
+// } else {
+//     console.log('condition false', ':(');
+// }
+// let value = 10;
+// if (value === 7) {
+//     console.log("value 7");
+// } else if (value === 8) {
+//     console.log("value 8");
+// } else if (value === 9) {
+//     console.log("value 9");
+// } else {
+//     console.log("another value");
+// }
+
+/***** Інструкція swich *****/
+
+// const name = prompt('What your name ?');
+// switch (name) {
+//     case "Kate":
+//         console.log('value Kate');
+//         break;
+//     case "Ivan":
+//         console.log('value Ivan');
+//         break;
+//     case "Alice":
+//         console.log('value Alice');
+//         break;
+//     default:
+//         console.log("Default value");
+// }
+
+/****** Тернарний оператор******/
+// condition ? true : false
+
+// const value = 12;
+// // let message = value > 15 && value < 20 ? 'в діапозоні від 15 до 20' : 'спробуй ще';
+// // console.log(message);
+
+// let message = "спробуйте ще";
+// if (value > 15 && value < 20) {
+//     message = "в діапозоні від 15 до 20";
+// }
+// console.log(message);
+
+/****** Цикл for ******/
+
+// const message = 'Hello world';
+// for (let i = 0; i < message.length; i+=1){
+//     console.log(message[i]);
+// }
+
+/******* практика********/
+// let message = prompt("Color ?");
+// let action;
+// if (message) {
+//     message = message.toLowerCase();
+// }
+// switch (message) {
+//     case "red":
+//         action = "stop";
+//         break;
+    
+//     case "yellow":
+//         action = "ready";
+//         break;
+    
+//     case "green":
+//         action = "go";
+//         break;
+    
+//     default:
+//         action = "be careful";
+    
+// }
+// console.log(action);
+
+// function check(text, answer) {
+//     let message = prompt(text);
+//     if (message) {
+//       message = message.toLowerCase();
+//     }
+//         console.log(message);
+    
+//     return message === answer;
+// }
+
+
+// console.log(
+//     check("Хочь не літак, а крилатий, без крил не може працювати.", "вітряк")
+// );
+// console.log(check("Через воду він проводить, а сам з місця вік не сходить.", "міст"));
+// function getDays(deps) {
+//     const speedDays = 7;
+//     const speedNight = 2;
+//     let total = 0;
+//     let days = 0;
+//     while (total < deps) {
+//         total += speedDays;
+//         days += 1;
+//         if (total < deps) {
+//             total -= speedNight;
+//        }
+//     }
+//     console.log(days);
+// }
+// getDays(42);
+function countVowel(str) {
+    const vowels = "aeiou";
+    let counter = 0;
+    for (let i = 0; i < str.length; i += 1) {
+        if (vowels.includes(str[i])) {
+            counter += 1;
+        }
+    }
+    return counter;
+}
+console.log(countVowel("Junior Web Developer"));
