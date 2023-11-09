@@ -692,14 +692,14 @@
 //     console.log(days);
 // }
 // getDays(42);
-function countVowel(str) {
-    const vowels = "aeiou";
-    let counter = 0;
-    for (let i = 0; i < str.length; i += 1) {
-        if (vowels.includes(str[i])) {
-            counter += 1;
-        }
-    }
-    return counter;
-}
-console.log(countVowel("Junior Web Developer"));
+// function countVowel(str) {
+//     const vowels = "aeiou";
+//     let counter = 0;
+//     for (let i = 0; i < str.length; i += 1) {
+//         if (vowels.includes(str[i])) {
+//             counter += 1;
+//         }
+//     }
+//     return counter;
+// }
+console.log(5 + 1);
