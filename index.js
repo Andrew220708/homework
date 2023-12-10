@@ -702,4 +702,106 @@
 //     }
 //     return counter;
 // }
-console.log(5 + 1);
+// function createFileName(name, ext) {
+//   name.trim();
+ 
+// }
+// function getExtremeElements(array) {
+//   const firstElement = array[0];
+//   const lastElement = array[array.length - 1];
+//   const newArray = [firstElement, lastElement];
+//   return newArray;
+// }
+
+// console.log(getExtremeElements([1, 2, 3, 4, 5]));
+// console.log(getExtremeElements(['Earth', 'Mars', 'Venus']));
+// console.log(getExtremeElements(['apple', 'peach', 'pear', 'banana']));
+
+// function getLength(array) {
+//   const text = array.join('').length;
+ 
+//   return text;
+// }
+// console.log(getLength(['Mango', 'hurries', 'to', 'the', 'train']));
+// console.log(getLength(['M', 'a', 'n', 'g', 'o']));
+// console.log(getLength(['top', 'picks', 'for', 'you']));
+
+// const fruits = ['apple', 'plum', 'pear', 'orange', 'banana'];
+
+// const fruits = ['apple', 'plum', 'pear', 'orange', 'banana'];
+
+// const firstTwoEls = ;
+// const nonExtremeEls = ;
+// const lastThreeEls = ;
+//
+//
+
+// function getEvenNumbers(start, end) {
+//   let doubleNumber = [];
+//   for (let i = start; i <= end; i += 1) {
+//       if (i % 2 === 0) {
+//         doubleNumber.push(i);
+//     }
+//   }
+//   return doubleNumber;
+// }
+
+// console.log(getEvenNumbers(2, 5));
+// console.log(getEvenNumbers(3, 11));
+// console.log(getEvenNumbers(6, 12));
+// console.log(getEvenNumbers(8, 8));
+// console.log(getEvenNumbers(7, 7));
+// console.log(getEvenNumbers());
+
+// function checkStorage(storage, item) {
+//     const fgh = item.toLowerCase();
+//     if (storage.includes(fgh)) {
+//     return `${fgh} is available to order!`;
+// } else {
+//   return "Sorry! We are out of stock!";
+// }
+// }
+
+// console.log(checkStorage(['apple', 'plum', 'pear'], 'plum'));
+// console.log(checkStorage(['apple', 'plum', 'pear'], 'pLuM'));
+// console.log(checkStorage(['apple', 'plum', 'pear'], 'pear'));
+// console.log(checkStorage(['apple', 'plum', 'pear'], 'pEAr'));
+// console.log(checkStorage(['apple', 'plum', 'pear'], 'orange'));
+// console.log(checkStorage(['apple', 'plum', 'pear'], 'carrot'));
+
+// function getCommonElements(array1, array2) {
+//     let newMas = [];
+    
+//     for (let i = 0; i <= array1.length; i += 1) {
+//       if (array2.includes(array1[i])) {
+//         newMas.push(array1[i]);
+//       }
+//     }
+//     return newMas;
+// }
+
+// console.log(getCommonElements([1, 2, 3], [2, 4]));
+// console.log(getCommonElements([1, 2, 3], [2, 1, 17, 19]));
+// console.log(getCommonElements([24, 12, 27, 3], [12, 8, 3, 36, 27]));
+// console.log(getCommonElements([10, 20, 30, 40], [4, 30, 17, 10, 40]));
+// console.log(getCommonElements([1, 2, 3], [10, 20, 30]));
+// const slug = 'amazing french recipes';
+// const slugParts = slug.split(' ');
+// console.log(slugParts);
+// const fruits = ["orange", "banana"];
+// console.table(fruits);
+// fruits.push("papae");
+// console.table(fruits);
+// fruits.pop();
+// console.table(fruits);
+function calc(a, b, callback) {
+    const result = callback(a, b);
+    console.log(result);
+}
+
+// calc(2, 3, function (x, y) {
+//     return x + y;
+// });
+// calc(2, 3, (x, y) => x + y);  
+// calc(10, 50, (s, l) => s * l);   
+calc(100, 900, (p, v) => p + v);             
